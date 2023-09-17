@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 
 async function searchPokemon(name) {
   //Empieza la API
-  const url = `https://pokeapi.co/api/v2/pokemon/${name}`;
+  const url = `https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`;
 
   try {
     const response = await fetch(url);
