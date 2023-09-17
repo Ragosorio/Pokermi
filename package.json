@@ -1,6 +1,6 @@
 {
   "name": "pokermi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pokedex in your terminal with npm",
   "main": "index.js",
   "type": "module",
