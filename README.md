@@ -11,7 +11,7 @@ npm install -g pokermi
 # Usage
 
 ```bash
- Pokermi <Pokemon Name>
+ pokermi <Pokemon Name>
 ```
 #### Example
 ```shell

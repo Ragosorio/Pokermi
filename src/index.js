@@ -35,7 +35,7 @@ async function searchPokemon(name) {
       .join(", ")}
     `);
   } catch (error) {
-    console.error(error);
+    console.log("No se encontraron resultados :(");
   }
 }
 
