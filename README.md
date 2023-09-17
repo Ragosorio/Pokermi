@@ -5,7 +5,7 @@ Pokedex in your terminal with npm
 ## Install
 
 ```npm
-npm install -g Pokermi
+npm install -g pokermi
 ```
 
 # Usage
