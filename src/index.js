@@ -1,14 +1,15 @@
 import fetch from "node-fetch";
 
 async function searchPokemon(name) {
-  //Empieza la API
-  const url = `https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`;
+  if (name) {
+    //Empieza la API
+    const url = `https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`;
 
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
 
-    console.log(`
+      console.log(`
     Nombre: ${data.forms[0].name}
     ID: ${data.id}
     Tipo: ${data.types.map((tipo) => tipo.type.name).join(", ")}
@@ -34,8 +35,11 @@ async function searchPokemon(name) {
       .slice(8, 11)
       .join(", ")}
     `);
-  } catch (error) {
-    console.log("No se encontraron resultados :(");
+    } catch (error) {
+      console.log("No se encontraron resultados :(");
+    }
+  } else {
+    console.log("Porfavor pon el nombre del pokemon que deseas buscar. ")
   }
 }
 
